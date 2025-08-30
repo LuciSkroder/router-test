@@ -35,7 +35,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           cache-dependency-path: router-test/package-lock.json
-          node-version: 22
+          node-version: 20
           cache: "npm"
 
       # Install dependencies (faster than npm install)
