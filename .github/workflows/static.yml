@@ -34,7 +34,8 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: 22.19.0
+          cache-dependency-path: subdir/package-lock.json
+          node-version: 22
           cache: "npm"
 
       # Install dependencies (faster than npm install)
